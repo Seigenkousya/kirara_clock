@@ -1,0 +1,35 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+    background: linear-gradient(to bottom right, #004044, #002222);
+    font-size: 28px;
+}
+
+main {
+    color: #fff6d5;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #EEEEEE;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    border-top: solid 1px lightgray;
+    color: #ffffff;
+    font-size: 23px;
+    padding-bottom: 15px;
+}
