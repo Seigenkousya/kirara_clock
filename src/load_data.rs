@@ -30,14 +30,27 @@ impl Clock {
 }
 
 impl Timeline {
+    fn create_table_header(&self) -> Html {
+        html! {
+            <tr>
+                <th> { "date" } </th>
+                <th> { "remain" } </th>
+                <th> { "event" } </th>
+                <th> { "description" } </th>
+            </tr>
+        }
+    }
+
     pub fn create_html_table(&self) -> Html {
         let clocks = 
             self.clock
                 .iter()
                 .map(|clk: &Clock| clk.html_row());
+        let table_header = self.create_table_header();
 
         html! {
             <table>
+                { table_header }
                 { for clocks }
             </table>
         }
