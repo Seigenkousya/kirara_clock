@@ -1,0 +1,25 @@
+# -- example --
+# [[clock]]
+# date = 2019-03-19 (yyyy-mm-dd [RFC3339 full-date])
+# remain = 00:00:45 (hh:mm:ss [RFC3339 partial-time])
+# event = 'abcdefg'
+# description = """\
+#     Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
+#     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\
+#     """
+
+[[clock]]
+date = 2019-03-19
+remain = 00:00:45
+event = 'abcdefg'
+description = """\
+    god is dead.\
+    """
+
+[[clock]]
+date = 2021-08-19
+remain = 00:00:45
+event = 'hijklmn'
+description = """\
+    It's a resurrection day.\
+    """
