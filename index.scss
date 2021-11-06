@@ -1,35 +1,52 @@
+$bgcolor_light: #004044;
+$bgcolor_dark: #002222;
+$main_char_color: #fff6d5;
+
 html,
 body {
     height: 100%;
     margin: 0;
 
-    background: linear-gradient(to bottom right, #004044, #002222);
+    background: linear-gradient(to bottom right, $bgcolor_light, $bgcolor_dark);
     font-size: 28px;
 }
 
 main {
-    color: #fff6d5;
+    color: $main_char_color;
     font-family: sans-serif;
     text-align: center;
 }
 
 table {
-    border-collapse: collapse;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    th, td {
+        padding: 8px;
+        font-size: 18px;
+        border: 1px solid #EEEEEE;
+    }
+
+    th {
+        background: lighten($bgcolor_light, 1%);
+    }
+
+    td {
+        background: lighten($bgcolor_light, 4%);
+    }
 }
 
-th, td {
-    padding: 5px;
-    font-size: 18px;
-    border: 1px solid #EEEEEE;
-}
 
 footer {
     position: fixed;
     bottom: 0;
 
     border-top: solid 1px lightgray;
-    color: #ffffff;
+    color: $main_char_color;
     font-size: 23px;
     padding-bottom: 15px;
 }

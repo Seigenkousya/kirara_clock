@@ -67,7 +67,7 @@ impl Component for Model {
                         { "copyright 2021- XXXXX: " }
                         <a href="https://yew.rs">{ "Yew" }</a><br/>
                         { "contribute: visit " }
-                        <a href="https://github.com/Alignof/yew_practice">{ "https://github.com/Alignof/yew_practice" }</a>
+                        <a href="https://github.com/Seigenkousya/kirara_clock">{ "https://github.com/Seigenkousya/kirara_clock" }</a>
                     </div>
                 </footer>
             </>
